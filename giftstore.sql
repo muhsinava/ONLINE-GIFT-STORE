@@ -1,32 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.9.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1:3308
--- Generation Time: Aug 03, 2020 at 02:20 PM
--- Server version: 8.0.18
--- PHP Version: 7.3.12
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `giftstore`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `crockery`
---
 
 DROP TABLE IF EXISTS `crockery`;
 CREATE TABLE IF NOT EXISTS `crockery` (
@@ -38,9 +10,7 @@ CREATE TABLE IF NOT EXISTS `crockery` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `crockery`
---
+
 
 INSERT INTO `crockery` (`id`, `name`, `img`, `price`, `category`) VALUES
 (81, 'kitten mug', '81.jpg', 150, 'crockery'),
@@ -60,11 +30,6 @@ INSERT INTO `crockery` (`id`, `name`, `img`, `price`, `category`) VALUES
 (96, 'Indigo Glaze', '96.jpg', 1500, 'crockery'),
 (97, 'Snack Plate', '97.jpg', 400, 'crockery');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `homedecor`
---
 
 DROP TABLE IF EXISTS `homedecor`;
 CREATE TABLE IF NOT EXISTS `homedecor` (
@@ -76,9 +41,6 @@ CREATE TABLE IF NOT EXISTS `homedecor` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `homedecor`
---
 
 INSERT INTO `homedecor` (`id`, `name`, `img`, `price`, `category`) VALUES
 (1, 'Oval Lamp', 'lamp.jpg', 999, 'homedecor'),
@@ -98,11 +60,7 @@ INSERT INTO `homedecor` (`id`, `name`, `img`, `price`, `category`) VALUES
 (15, 'PhotoFrame', 'photo.jpg', 499, 'homedecor'),
 (16, 'Frame', 'frame.jpg', 699, 'homedecor');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `jewellery`
---
 
 DROP TABLE IF EXISTS `jewellery`;
 CREATE TABLE IF NOT EXISTS `jewellery` (
@@ -114,9 +72,6 @@ CREATE TABLE IF NOT EXISTS `jewellery` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `jewellery`
---
 
 INSERT INTO `jewellery` (`id`, `name`, `img`, `price`, `category`) VALUES
 (53, 'bracelet', 'bracelet.jpg', 699, 'jewellery'),
@@ -132,11 +87,6 @@ INSERT INTO `jewellery` (`id`, `name`, `img`, `price`, `category`) VALUES
 (63, 'Infinity earing', '11.jpg', 650, 'jewellery'),
 (64, 'Pearl ring', '12.jpg', 999, 'jewellery');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `phonecasse`
---
 
 DROP TABLE IF EXISTS `phonecasse`;
 CREATE TABLE IF NOT EXISTS `phonecasse` (
@@ -148,9 +98,6 @@ CREATE TABLE IF NOT EXISTS `phonecasse` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `phonecasse`
---
 
 INSERT INTO `phonecasse` (`id`, `name`, `img`, `price`, `category`) VALUES
 (18, 'phonecase1', 'case1.jpg', 499, 'phonecase'),
@@ -160,11 +107,6 @@ INSERT INTO `phonecasse` (`id`, `name`, `img`, `price`, `category`) VALUES
 (22, 'Pink Case', 'case5.jpg', 555, 'phonecase'),
 (23, 'Captain', 'case6.jpg', 599, 'phonecase');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `product_kids`
---
 
 DROP TABLE IF EXISTS `product_kids`;
 CREATE TABLE IF NOT EXISTS `product_kids` (
@@ -176,9 +118,6 @@ CREATE TABLE IF NOT EXISTS `product_kids` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `product_kids`
---
 
 INSERT INTO `product_kids` (`id`, `name`, `img`, `price`, `category`) VALUES
 (24, 'kidstable', 'table.jpg', 2000, 'kids'),
@@ -194,12 +133,6 @@ INSERT INTO `product_kids` (`id`, `name`, `img`, `price`, `category`) VALUES
 (34, 'Key Chain', 'keychain.jpg', 449, 'kids'),
 (35, 'car', 'car.jpg', 1999, 'kids');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `signup`
---
-
 DROP TABLE IF EXISTS `signup`;
 CREATE TABLE IF NOT EXISTS `signup` (
   `fname` varchar(10) NOT NULL,
@@ -211,19 +144,11 @@ CREATE TABLE IF NOT EXISTS `signup` (
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `signup`
---
 
 INSERT INTO `signup` (`fname`, `lname`, `phone`, `email`, `username`, `password`) VALUES
 ('namrata', 'bomble', 1234567890, 'sgg@d.xuch', 'namrata', 'namrata'),
 ('sayali', 'pawar', 1234567890, 'sayali@gmail.com', 'sayali', 'sayali');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `softtoys`
---
 
 DROP TABLE IF EXISTS `softtoys`;
 CREATE TABLE IF NOT EXISTS `softtoys` (
@@ -235,9 +160,6 @@ CREATE TABLE IF NOT EXISTS `softtoys` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `softtoys`
---
 
 INSERT INTO `softtoys` (`id`, `name`, `img`, `price`, `category`) VALUES
 (64, 'Turtle', '64.jpg', 459, 'softtoys'),
@@ -257,11 +179,7 @@ INSERT INTO `softtoys` (`id`, `name`, `img`, `price`, `category`) VALUES
 (78, 'Keyring', '78.jpg', 109, 'softtoys'),
 (80, 'Fox Toy', '80.jpg', 89, 'softtoys');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `wallet`
---
 
 DROP TABLE IF EXISTS `wallet`;
 CREATE TABLE IF NOT EXISTS `wallet` (
@@ -273,9 +191,7 @@ CREATE TABLE IF NOT EXISTS `wallet` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `wallet`
---
+
 
 INSERT INTO `wallet` (`id`, `name`, `img`, `price`, `category`) VALUES
 (98, 'Leather wallet', '98.jpg', 800, 'wallet'),
@@ -295,11 +211,7 @@ INSERT INTO `wallet` (`id`, `name`, `img`, `price`, `category`) VALUES
 (112, 'Leather handbag', '112.jpg', 550, 'wallet'),
 (113, 'Coin purse', '113.jpg', 100, 'wallet');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `watch`
---
 
 DROP TABLE IF EXISTS `watch`;
 CREATE TABLE IF NOT EXISTS `watch` (
@@ -311,9 +223,6 @@ CREATE TABLE IF NOT EXISTS `watch` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `watch`
---
 
 INSERT INTO `watch` (`id`, `name`, `img`, `price`, `category`) VALUES
 (36, 'Watch1', '1.jpg', 10500, 'watches'),
